@@ -1,4 +1,4 @@
-d
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,11 +6,22 @@ d
     <title>Simpang Lima Gumul</title>
 
     <!-- Link CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Link jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -18,14 +29,19 @@ d
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="window.location.hash='';">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#" data-aos="fade-right">
           <i class="bi bi-building"></i>SLG
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,18 +57,13 @@ d
               </a>
             </li>
             <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
-              <a class="nav-link" href="#fasilitas">
-                <i class="bi bi-card-image"></i> Fasilitas
+              <a class="nav-link" href="#Galeri">
+                <i class="bi bi-card-image"></i> Galery
               </a>
             </li>
             <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
               <a class="nav-link" href="#contact">
                 <i class="bi bi-envelope"></i> Contact
-              </a>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
-              <a class="nav-link" href="#informasi">
-                <i class="bi bi-card-image"></i> Information
               </a>
             </li>
           </ul>
@@ -215,55 +226,56 @@ d
       </div>
     </section>
 
-    <!-- Gallery Section -->
-    <div id="Galeri" class="gallery-section mt-5" data-aos="fade-up">
-      <h3 class="text-center mb-4 text-white">Galeri Foto</h3>
-      <div class="slideshow-container">
-        <div class="slides">
-          <img
-            src="image/Monumen_Simpang_Lima_Gumul.jpg"
-            style="width: 100%"
-          />
-          <div class="text"><strong>Monumen SLG</strong></div>
-        </div>
+        <!-- Gallery Section -->
+    <section>
+        <div id="Galeri" class="gallery-section mt-5" data-aos="fade-up">
+          <h3 class="text-center mb-4 text-white">Galeri Foto</h3>
+          <div class="slideshow-container">
+            <div class="slides">
+              <img
+                src="image/Monumen_Simpang_Lima_Gumul.jpg"
+                style="width: 100%"
+              />
+              <div class="text"><strong>Monumen SLG</strong></div>
+            </div>
 
-        <div class="slides">
-          <img
-            src="image/image-65-1024x768-transformed.png"
-            style="width: 100%"
-          />
-          <div class="text"><strong>Taman Rekreasi</strong></div>
-        </div>
+            <div class="slides">
+              <img
+                src="image/image-65-1024x768-transformed.png"
+                style="width: 100%"
+              />
+              <div class="text"><strong>Taman Rekreasi</strong></div>
+            </div>
 
-        <div class="slides">
-          <img
-            src="image/bima-putra-muryawan-RQ5NCGvMmfw-unsplash.jpg"
-            style="width: 100%"
-          />
-          <div class="text"><strong>Amphitheater</strong></div>
-        </div>
+            <div class="slides">
+              <img
+                src="image/bima-putra-muryawan-RQ5NCGvMmfw-unsplash.jpg"
+                style="width: 100%"
+              />
+              <div class="text"><strong>Amphitheater</strong></div>
+            </div>
 
-        <div class="slides">
-          <img
-            src="image/mahmur-marganti-ckxb3Jp0WnQ-unsplash.jpg"
-            style="width: 100%"
-          />
-          <div class="text"><strong>Area Kuliner</strong></div>
+            <div class="slides">
+              <img
+                src="image/mahmur-marganti-ckxb3Jp0WnQ-unsplash.jpg"
+                style="width: 100%"
+              />
+              <div class="text"><strong>Area Kuliner</strong></div>
+            </div>
+
+            <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button>
+          </div>
+
+          <div class="dot-container" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
         </div>
       </div>
-
-      <div class="dot-container" style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-
-      <div class="position">
-        <button class="prev" onclick="plusSlides(-1)">❮</button>
-        <button class="next" onclick="plusSlides(1)">❯</button>
-      </div>
-    </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
@@ -405,7 +417,7 @@ d
     </section>
 
     <!-- Footer -->
-    <footer id="informasi" class="footer bg-dark text-white py-5">
+    <footer class="footer bg-dark text-white py-5">
       <div class="container">
         <div class="row text-center g-4">
           <!-- Brand Column -->
